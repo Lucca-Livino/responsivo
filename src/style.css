@@ -25,6 +25,9 @@
   background-color: rgb(152, 83, 216);
 }
 
+.titulo{
+  padding: 20px;
+}
 
 @media(min-width: 768px) {
   .menu{

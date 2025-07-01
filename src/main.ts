@@ -1,17 +1,18 @@
 import './style.css'
 import './hamburger.css'
+import './rodape.css'
 
 const menu = document.getElementById('menu')!
 const hamburger = document.getElementById('hamburger')!
-const burgerIcon = document.getElementById('burger-icon') as HTMLImageElement;
+const burgerIcone = document.getElementById('burger-icone') as HTMLImageElement;
 
 hamburger.addEventListener('click', () => {
   menu.classList.toggle('open');
   hamburger.classList.toggle('active');
   if (hamburger.classList.contains('active')) {
-    burgerIcon.src = '/x.svg';
+    burgerIcone.src = '/x.svg';
   } else {
-    burgerIcon.src = '/burger-menu-roxo.svg';
+    burgerIcone.src = '/burger-menu-roxo.svg';
   }
 });
 
@@ -19,7 +20,7 @@ window.addEventListener('resize', () => {
   if (window.innerWidth > 768) {
     menu.classList.remove('open');
     hamburger.classList.remove('active');
-    burgerIcon.src = '/burger-menu-roxo.svg';
+    burgerIcone.src = '/burger-menu-roxo.svg';
   }
 });
 
