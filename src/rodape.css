@@ -1,10 +1,82 @@
-.rodape{
-    background-color: #0c6318 ;
-    color: white;
+h1 {
+    font-family: 'Alfa Slab One';
+    font-size: 2.5rem;
+    color: #002c07;
+    text-align: center;
+    margin: 50px;
+}
+
+.rodape {
+    background-color: #015104;
+    color: #ffffff;
+    padding: 20px;
+    gap: 30px;
+    display: grid;
+}
+
+.rodape ul {
     list-style: none;
+    padding: 0;
+    border-left: 1px #ffffff dotted ;
 
 }
 
-.rodape >li > a{
+.rodape h3 {
+    color: #60ba6b;
+    margin-bottom: 10px;
+    padding-left: 20px;
+
+}
+
+.rodape li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    
+}
+
+.rodape a {
     text-decoration: none;
+    color: #ffffff;
 }
+
+.rodape a:hover {
+    text-decoration: underline;
+}
+
+.logos {
+    padding-top: 15px;
+    display: grid;
+    background-color: #002c07;
+}
+
+.logos img {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.texto{
+    text-align: center;
+    margin: 40px 10px 10px 10px;
+}
+
+@media (min-width: 768px) {
+    .rodape {
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #002c07;
+    
+    }
+
+    .texto {
+        text-align: center;
+        margin: 40px 10px 10px 10px;
+    }
+}
+
